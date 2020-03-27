@@ -1,0 +1,3 @@
+[submodule "cqf"]
+	path = cqf-src
+	url = https://github.com/splatlab/cqf
