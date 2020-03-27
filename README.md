@@ -11,13 +11,13 @@ doAssert cqf.init(bits=30)
 
 var n = 0
 for i in 0'u64..100_000_000:
-cqf.inc(i)
-n.inc
+  cqf.inc(i)
+  n.inc
 for i in countup(0'u64, 100_000_000, 10000):
-cqf.inc(i)
+  cqf.inc(i)
 
 for i in countup(0'u64, 10_000_000, 1000):
-echo "i:", i, " -> ", cqf[i]
+  echo "i:", i, " -> ", cqf[i]
 
 echo n
 ```
